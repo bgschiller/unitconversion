@@ -1,19 +1,21 @@
-_unitconversion.scss (v.2.1.13)
+_unitconversion.scss (v.2.2.13)
 ==============
+
+This is a fork of https://github.com/jakob-e/unitconversion. The only difference is that I've applied the sass division migration.
 
 **Convert Anything** (almost)
 
 At the moment the following units are supported (please comment if something is wrong/missing):
 
 ````SCSS
-px, pt, pc, in, mm, cm, em, rem, ex, ch, vw, vh, vmin, vmax, 
+px, pt, pc, in, mm, cm, em, rem, ex, ch, vw, vh, vmin, vmax,
 deg, rad, grad, turn, dpi, dpcm, dppx, s, ms, hz, khz, number,
-ratio 
+ratio
 ````
 
 **NPM**
 ````
-npm install unitconversion
+npm install @bgschiller/unitconversion
 ````
 
 
@@ -23,13 +25,13 @@ Rather than going with the "good" old fromUnit-to-toUnit(fromUnit) syntax this f
 
 ````SCSS
        pt-to-px(input);
-       pc-to-px(input);       
-       in-to-px(input);       
-       mm-to-px(input);    ==>   px(input);   
-       cm-to-px(input);              
-       em-to-px(input);              
-       rem-to-px(input);                     
-       num-to-px(input);  
+       pc-to-px(input);
+       in-to-px(input);
+       mm-to-px(input);    ==>   px(input);
+       cm-to-px(input);
+       em-to-px(input);
+       rem-to-px(input);
+       num-to-px(input);
 `````
 **Note!**
 
@@ -44,7 +46,7 @@ Example – how to set a visual size of 18px on a class nested in an element wit
 `````
 * If you use unit conversion in relation to the font shorthand syntax be aware that line-height "/" will cause division. To prevent this from happening you can either either interpolate the value or use + to add the pieces together without calculation:
 ````SCSS
-      h2 { 
+      h2 {
           font:300 #{em(24px)}/3 'Lato', sans-serif;
       }
 ````

@@ -1,13 +1,14 @@
 {
-  "name": "unitconversion",
-  "version": "2.1.13",
+  "name": "@bgschiller/unitconversion",
+  "private": false,
+  "version": "2.2.13",
   "description": "Simple SCSS functions for unitconversion",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jakob-e/unitconversion.git"
+    "url": "git+https://github.com/bgschiller/unitconversion.git"
   },
   "keywords": [
     "SCSS",
@@ -18,7 +19,7 @@
   "author": "Jakob E <mail.eriksen@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jakob-e/unitconversion/issues"
+    "url": "https://github.com/bgschiller/unitconversion/issues"
   },
-  "homepage": "https://github.com/jakob-e/unitconversion#readme"
+  "homepage": "https://github.com/bgschiller/unitconversion#readme"
 }
